@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📝 To-Do List</h1>
+
+        <p class="subtitle">Organize your tasks and stay productive</p>
+
+        <form id="taskForm">
+
+            <input
+                type="text"
+                name="task"
+                id="task"
+                placeholder="Enter a task..."
+                autocomplete="off"
+            >
+
+            <button type="submit">Add Task</button>
+
+        </form>
+
+        <div class="task-header">
+            <h2>Your Tasks</h2>
+            <span id="taskCount">0 Tasks</span>
+        </div>
+
+        <div id="allTask">
+            <!-- Tasks will be added here using JavaScript -->
+        </div>
+
+    </div>
+
+    <script src="first.js"></script>
+
+</body>
+
+</html>
