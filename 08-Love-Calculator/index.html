@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a001f, #3d0b45);
+            color: white;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #parent {
+            width: 380px;
+            padding: 35px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            text-align: center;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            text-align: left;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        input {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        input:focus {
+            box-shadow: 0 0 0 2px #ff4d88;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+
+            background: #ff4d88;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #ff286f;
+            transform: scale(1.03);
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parent">
+
+        <h1>❤️ Love Calculator</h1>
+
+        <form>
+            <label for="Boy">Boy</label>
+            <input type="text" id="Boy" name="Boy" placeholder="Enter name" required>
+
+            <label for="Girl">Girl</label>
+            <input type="text" id="Girl" name="Girl" placeholder="Enter name" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <h2>Result</h2>
+
+    </div>
+
+    <script src="first.js"></script>
+
+</body>
+</html>
