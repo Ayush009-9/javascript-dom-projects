@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: black;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #parent {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            border: none;
+            padding: 12px 22px;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #orange {
+            background-color: orangered;
+        }
+
+        #pink {
+            background-color: pink;
+            color: black;
+        }
+
+        #green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parent">
+
+        <button id="red">Red</button>
+
+        <button id="blue">Blue</button>
+
+        <button id="orange">Orange</button>
+
+        <button id="pink">Pink</button>
+
+        <button id="green">Green</button>
+
+    </div>
+
+    <script src="first.js"></script>
+
+</body>
+
+</html>
